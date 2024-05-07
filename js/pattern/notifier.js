@@ -1,4 +1,4 @@
-import { observor } from "/js/pattern/observer.js"
+import { observer } from "/js/pattern/observer.js"
 export class Notifier
 {
 #observers
