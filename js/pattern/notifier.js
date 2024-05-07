@@ -15,9 +15,7 @@ notify()
 {
     for(const obs  of this.#observers)
     {
-        obs.notify()
-
-
+        obs.notify();
 
     }
 
