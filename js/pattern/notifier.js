@@ -1,4 +1,4 @@
-import { observer } from "/js/pattern/observer.js"
+import { Observer } from "/js/pattern/observer.js"
 export class Notifier
 {
 #observers
@@ -6,7 +6,7 @@ constructor()
 {
 this.#observers = [];
 }
-addObserve(observer)
+addObserver(observer)
 {
     if(observer instanceof Observer)
     this.#observers.push(observer)

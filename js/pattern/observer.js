@@ -1,4 +1,4 @@
-export class observer
+export class Observer
 {
     notify()
     {

@@ -1,6 +1,5 @@
 
-import { Counter } from "/js/models/counter.js"
-const c = new Counter();
-c.incrementValue();
-c.incrementValue();
-console.log(c.Value);
+import { Controller } from "/js/controllers/controller.js"
+import { View } from "/js/views/view.js"
+const c = new Controller();
+const v = new View(c);

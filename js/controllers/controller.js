@@ -1,5 +1,5 @@
 import { Counter } from "/js/models/counter.js"
-import {Notifier } from "/js/pattern/notifier.js" 
+import { Notifier } from "/js/pattern/notifier.js" 
 export class Controller extends Notifier
 {
     #counter;
@@ -7,25 +7,28 @@ export class Controller extends Notifier
     {
         super();
         this.#counter = new Counter();
+        
+        
 
     }
 
     incrementCounter()
     {
+        console.log(this.counterValue);
         this.#counter.incrementValue();
-        notify();
+        this.notify();
 
     }
     decrementCounter()
     {
         this.#counter.decrementValue();
-        notify();
-
+        this.notify();
     }
+
     get counterValue()
     {
         return this.#counter.Value;
 
     }
-
+    
 }
