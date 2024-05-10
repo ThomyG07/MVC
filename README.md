@@ -3,7 +3,8 @@ Les difficultés que j'ai rencontrées lors de ce Tp, étaient dans un premier t
 ## MODULES ES6
 ### AVEC LES MODULES
 Testez à nouveau le fonctionnement. Que constatez-vous ? Comment l’expliquez-vous ?
-
+Après avoir retiré le scripte « counter.js » du fichier « index.html », à présent, on a plus accès à la classe Counter ainsi on ne peut pas créer d'objet associé à cette classe. Pour remédier à ce problème, il faut importer la Classe depuis son fichier associé :
+import { counter } from "./../models/counter.js"   
 ### UN PEU MIEUX
 Expliquez le résultat obtenu.
 
